@@ -6,8 +6,7 @@
     grid-template-columns: 2fr auto 2fr;
     padding: 92px 50px 91px;
     align-items: center;
-    width: 1052px;
-    height: 105px;
+   
 }
 
 
@@ -48,11 +47,10 @@ a{
     font-weight: 400;
     line-height: 135%;
     text-decoration: none;
+    padding-right: 37px;
 }
 
 .cover {
-   
-    min-height: 757px;
     position: relative;
     background-position: center;
     background-size: cover;
@@ -64,8 +62,7 @@ a{
 .overlay {
     position: absolute;
     opacity: 0.6;
-    top: 0;
-    left: 0;
+    inset: 0;
     background-color: #000;
     height: 100%;
     width: 100%;
@@ -120,17 +117,23 @@ a{
     display: flex;
     z-index: 10;
     justify-content: flex-end;
-    gap: 68px;
+    gap: 79px;
     padding: 0 50px 50px;
+    align-items: center;
+    
 }
 
 .cover__description-text{
-     padding: 12px 32px;
+    
      color: #fff;
      font-size: 22px;
      line-height: 28px;
     text-transform: uppercase;
     word-spacing: 18px;
+    
+    
+    
+    
 }
 
 .bet-button{
@@ -141,6 +144,7 @@ a{
     font-size: 22px;
     font-weight: 400;
     text-transform: uppercase;
+    
 }
     
 /* ------   Сards  -------------         */                       
@@ -148,6 +152,7 @@ a{
 .lots {
     padding-top: 180px;
     padding-left: 24px;
+    padding-right: 24px;
    
 }
 
@@ -214,7 +219,7 @@ a{
     line-height: 120%;
     text-decoration: underline;
     text-underline-offset: 4px;
-     ext-transform: uppercase;
+    text-transform: uppercase;
     
 }
 
@@ -238,7 +243,7 @@ a{
 }
 
 .lots__look-more-link {
-    padding-left: 40px;
+    margin-left: 40px;
     font-size: 20px;
     line-height: 1.15;
     text-decoration: underline;
@@ -248,15 +253,19 @@ a{
 /*---------about-----*/
 
 .about {
-   
     display: grid;
-    grid-template-columns: 430px 1fr;
-    gap: 25px;
-    padding: 182px 50px 0;
+    grid-template-columns: 320px 1fr;
+    gap: 10px;
+    padding: 182px 30px 0 50px;
+    
 }
 
 .about__column {
     justify-self: center;
+}
+
+.first__column{
+    padding-right: 47px;
 }
 
 .about__text {
@@ -268,11 +277,21 @@ a{
     padding-bottom: 27px;
 }
 
+
+.about__text:last-child {
+    padding-bottom: 0;
+}
+
+.about__text:last-child {
+    padding-bottom: 0;
+}
+
 .about__logo {
     border-radius: 50%;
     width: 240px;
     height: 240px;
     background-color: #000;
+    
 }
 
 .about__logo-image {
@@ -283,14 +302,7 @@ a{
 }
 
 
-.about__text {
-    color: #000;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-bottom: 27px;
-}
+
 
 .about__title {
     padding: 100px 0 100px;
